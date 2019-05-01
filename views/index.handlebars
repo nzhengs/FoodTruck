@@ -1,8 +1,8 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <img src="assets/images/foodtruck.jpg" class="rounded mx-auto d-block" style="height:200px" alt="Food Truck">
-            {{!-- <h1 class="text-center">Food Truck</h1> --}}
+            <img src="assets/images/foodtruck.jpg" class="rounded mx-auto d-block" style="height:200px"
+                alt="Food Truck">
 
         </div>
     </div>
@@ -26,7 +26,7 @@
             <ul>
                 {{#each foods}}
                 {{#unless devour}}
-                <li> {{food_name}} <button class="eat btn btn-secondary" data-id="{{id}}"> Devour</button> </li>
+                <li> {{food_name}} <button class="eat btn btn-secondary" style="margin:1px" data-id="{{id}}"> Devour</button> </li>
                 {{/unless}}
                 {{/each}}
             </ul>
