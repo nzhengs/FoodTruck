@@ -15,10 +15,11 @@ const food = {
         return orm.selectAll("foods");
     },
     create: function(name) {
+        console.log(name);
         return orm.insertOne("foods", "food_name", name);
     },
-    update: function(id,name){
-        return orm.updateOne("foods","devour")
+    update: function(id,devour){
+        return orm.updateOne("foods",`devour=${devour}`,`id=${id}`)
     }
 }
 

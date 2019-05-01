@@ -30,7 +30,7 @@ const orm = {
   },
   updateOne: function(tableName, value, condition) {
     const promise = new Promise(function(resolve, reject) {
-      const query = `UPDATE (${tableName}) SET ("${value}") WHERE ${condition} `;
+      const query = `UPDATE ${tableName} SET ${value} WHERE ${condition} `;
       connection.query(query, function(err, result) {
         if (err) {
           reject(err);
